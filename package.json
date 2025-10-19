@@ -1,0 +1,43 @@
+{
+  "name": "marketpro",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --ext .ts,.js,.vue",
+    "lint:fix": "eslint . --ext .ts,.js,.vue --fix",
+    "format": "prettier --write .",
+    "prebuild": "npm run lint && npm run lint:fix && npm run format",
+    "build": "nuxt build",
+    "pregenerate": "npm run lint && npm run lint:fix && npm run format",
+    "generate": "nuxt generate",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^2.6.2",
+    "@unhead/vue": "^2.0.17",
+    "bootstrap": "^5.3.8",
+    "nuxt": "^4.1.2",
+    "nuxt-aos": "^1.2.5",
+    "swiper": "^12.0.2",
+    "vue": "^3.5.21",
+    "vue-animated-counter": "^0.3.1",
+    "vue-multiselect": "^3.3.1",
+    "vue-range-multi": "^0.5.0",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.9.0",
+    "@nuxt/image": "^1.11.0",
+    "@nuxt/scripts": "^0.12.1",
+    "@types/bootstrap": "^5.2.10",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2"
+  }
+}
